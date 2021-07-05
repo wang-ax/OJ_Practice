@@ -48,7 +48,7 @@ public class Solution {
         }
 
         Map<String,Integer> map = stack.pop();
-        TreeMap<String,Integer> treeMap = new TreeMap<>();
+        TreeMap<String,Integer> treeMap = new TreeMap<>(map);
         StringBuffer stringBuffer = new StringBuffer();
         for(Map.Entry<String,Integer> entry : treeMap.entrySet()){
             String atom = entry.getKey();
