@@ -26,7 +26,7 @@ public class Solution {
         int maxnum =0;
         for (Map.Entry<Integer,Integer> entry : map.entrySet()){
             if (maxCount == entry.getValue()){
-                maxnum = entry.getValue();
+                maxnum = entry.getKey();
             }
         }
         return maxnum;
